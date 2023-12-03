@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "meRlI3Ci/1vDmhreb4LsvRRKtOa8D3Gikck28CUml4M=",
+  "Source": "GINS_Task",
+  "BasePath": "_content/GINS_Task",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GINS_Task\\wwwroot",
+      "Source": "GINS_Task",
+      "ContentRoot": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\",
+      "BasePath": "_content/GINS_Task",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\script.js",
+      "SourceId": "GINS_Task",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\",
+      "BasePath": "_content/GINS_Task",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\style.css",
+      "SourceId": "GINS_Task",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\",
+      "BasePath": "_content/GINS_Task",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\script.js",
+      "PackagePath": "staticwebassets\\script.js"
+    },
+    {
+      "Id": "E:\\Projects\\GINS_interviewTask\\GINS_Task\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GINS_Task.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GINS_Task.props",
+      "PackagePath": "build\\GINS_Task.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GINS_Task.props",
+      "PackagePath": "buildMultiTargeting\\GINS_Task.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GINS_Task.props",
+      "PackagePath": "buildTransitive\\GINS_Task.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="shortcut icon" href="#">
+
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    
+    <!--Jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="w-100 bg-secondary bg-opacity-10 p-2">
+    <!-- Header Part -->
+    <header class="border-bottom pt-1 px-3 bg-dark bg-opacity-10">
+        <h5 class="fw-bold">Meeting Minutes</h5>
+    </header>
+
+    <main class="overflow-x-hidden">
+        <!-- Radio Buttons  -->
+        <div class="px-3 py-4 border-bottom bg-white">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input"
+                       type="radio"
+                       name="inlineRadioOptions"
+                       id="inlineRadio1"
+                       value="Corporate"
+                       checked />
+                <label class="form-check-label" for="inlineRadio1">Corporate</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input"
+                       type="radio"
+                       name="inlineRadioOptions"
+                       id="inlineRadio2"
+                       value="Individual" />
+                <label class="form-check-label" for="inlineRadio2">Individual</label>
+            </div>
+        </div>
+
+        <form id="meetingMinutesForm">
+            <!-- 1st part -->
+            <div class="bg-white row px-3 py-3">
+                <!-- col 1 -->
+                <div class="col-6 d-flex flex-column gap-2">
+                    <!-- customer name -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Customer Name<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-control" id="customerDropdown">
+                                <option value="">select customer name</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Date</label>
+                        </div>
+                        <div class="col-8">
+                            <input class="w-100 form-control"
+                                   type="datetime-local"
+                                   name="MeetingDate"
+                                   value="" />
+                        </div>
+                    </div>
+
+                    <!-- Meeting Place -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Meeting Place<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-8">
+                            <input placeholder="Meeting Place"
+                                   class="form-control"
+                                   type="text"
+                                   name="MeetingPlace"
+                                   value="" />
+                        </div>
+                    </div>
+
+                    <!-- Attends from client side -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">
+                                Attends From Client Side<span class="text-danger">*</span>
+                            </label>
+                        </div>
+                        <div class="col-8">
+                            <textarea class="form-control"
+                                      type="text"
+                                      name="AttendsClient"
+                                      value=""
+                                      rows="2"
+                                      placeholder="Present client side"></textarea>
+                        </div>
+                    </div>
+                    <!-- Attends from host side -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">
+                                Attends From Host Side<span class="text-danger">*</span>
+                            </label>
+                        </div>
+                        <div class="col-8">
+                            <textarea class="form-control"
+                                      type="text"
+                                      name="AttendsHost"
+                                      value=""
+                                      rows="2"
+                                      placeholder="Present self side"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- col 2 -->
+                <div class="col-6 d-flex flex-column gap-2">
+                    <!-- meeting agenda -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Meeting Agenda<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-8">
+                            <input placeholder="Meeting Agenda"
+                                   class="form-control"
+                                   type="text"
+                                   name="MeetingAgenda"
+                                   value="" />
+                        </div>
+                    </div>
+
+                    <!-- Meeting Discussion -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Meeting Discussion<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-8">
+                            <textarea rows="2"
+                                      class="form-control"
+                                      type="text"
+                                      name="MeetingDiscussion"
+                                      value=""
+                                      placeholder="Meeting Discussion"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Meeting Decision -->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Meeting Decision<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-8">
+                            <textarea class="form-control"
+                                      type="text"
+                                      name="MeetingDecision"
+                                      value=""
+                                      rows="2"
+                                      placeholder="Meeting Decision"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- 2nd part -->
+        <div class="bg-white px-3 py-3 mt-2">
+            <div class="row d-flex flex-column gap-2">
+                <!-- service/product -->
+                <div class="row col-8">
+                    <div class="col-4">
+                        <label class="form-label">
+                            Interested Product/Service
+                        </label>
+                    </div>
+                    <div class="col-8">
+                        <select class="form-control" id="interestedProduct">
+                            <option value="" >
+                                select product/service interested
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- quantity and unit -->
+                <div class="row col-8">
+                    <div class="col-4">
+                        <label class="form-label">Quantity</label>
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="text" name="quantity" id="quantity" />
+                    </div>
+                    <div class="col-2">
+                        <label class="form-label">Unit</label>
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control"
+                               type="text"
+                               name="unit"
+                               disabled
+                               id="unit" />
+                    </div>
+                </div>
+            </div>
+            <button class="mt-2 btn btn-light border text-dark" type="button" id="addButton">
+                + Add
+            </button>
+        </div>
+
+        <!-- 3rd part -->
+        <div class="bg-white mt-2 mb-5">
+            <div class="pb-5">
+                <table class="table table-bordered" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">SL#</th>
+                            <th scope="col">Interested Product/Service Name</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Unit</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td colspan="6" class="align-middle">No matching record found.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 4th part -->
+        <div class="d-flex gap-2 mb-3">
+            <button id="saveButton" class="btn btn-light border">Save</button>
+            <button id="refreshButton" class="btn btn-light border">Refresh</button>
+        </div>
+    </main>
+</body>
+</html>

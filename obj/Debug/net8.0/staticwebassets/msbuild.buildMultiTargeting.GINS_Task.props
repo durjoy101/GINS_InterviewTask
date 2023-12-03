@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GINS_Task.props" />
+</Project>
